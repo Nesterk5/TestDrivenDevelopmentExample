@@ -1,5 +1,5 @@
 function multiply(a, b) {
-  return 1; // Hardcoded to pass the first test
+  return a * b;
 }
 
 export default multiply;
