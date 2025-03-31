@@ -32,7 +32,10 @@ describe("Multiply Function", function () {
   it('should return 8 when multiplying  "2" * "4"', function () {
     assert.strictEqual(multiply("2", "4"), 8);
   });
-  it("should return NaN when multiplying a character by a number", () => {
-    assert.strictEqual(multiply("a", 2), NaN);
+  // it("should return NaN when multiplying a character by a number", () => {
+  //   assert.strictEqual(multiply("a", 2), NaN);
+  // });
+  it("should return NaN when multiplying a character/string by a number", () => {
+    assert.ok(isNaN(multiply("hello", 2))); // Using isNaN() to check for NaN
   });
 });
